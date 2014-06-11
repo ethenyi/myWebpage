@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Ethen Yi | Front-End Developer</title>
+<link rel="shortcut icon" href="images/favlogo.png">
+<link href="styles/mystyle.css" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="javascript/js.js"></script>
+<script type="text/javascript" src="javascript/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="javascript/jquery.localscroll-1.2.7-min.js"></script>
+<script type="text/javascript" src="javascript/jquery.scrollTo-1.4.2-min.js"></script>
+<script type="text/javascript">
+		$(document).ready(function(){
+		$('.button').localScroll(800);
+		$('#nav').localScroll(800);
+		//.parallax(xPosition, speedFactor, outerHeight) options:
+		//xPosition - Horizontal position of the element
+		//inertia - speed to move relative to vertical scroll. Example: 0.1 is one tenth the speed of scrolling, 2 is twice the speed of scrolling
+		//outerHeight (true/false) - Whether or not jQuery should use it's outerHeight option to determine when a section is in the viewport
+		$('#intro').parallax("50%", 0.5);
+		$('.bg').parallax("50%", 0.4);
+		$('#third').parallax("50%", 0.3);
+		})
+	</script>
+</head>
+<body>
+<div id="nav">
+	<a href="#intro">
+	<img class="navlogo" src="images/ethenlogo.png" alt="navlogo"></a>
+	<h3>
+	<a href="#fourth">contact</a>
+	</h3>
+	<h3>
+	<a href="#third">recent work</a>
+	</h3>
+	<h3>
+	<a href="#second">about</a>
+	</h3>
+</div>
+<div id="intro" style="background-position: 50% 0px;">
+	<div class="story">
+		<div class="center">
+			<img class="bglogo" src="images/bg_logo.png" alt="bglogo">
+			<h1>front-end developer</h1>
+			<div class="headerbuttons">
+				<div class="button recentwork" style="float:left;">
+					<a href="#third"><span></span>
+					</a>
+				</div>
+				<div class="button hireme" style="float:right;">
+					<a href="#fourth"><span></span>
+					</a>
+				</div>
+			</div>
+			<!--.headerbuttons-->
+		</div>
+	</div>
+	<!--.mystory-->
+</div>
+<div id="second">
+	<div class="story">
+		<div class="center">
+			<div class="aboutleft">
+				<img src="images/about_left.png" alt="about">
+			</div>
+			<p class="aboutright">
+				 Hello. <br>
+				 I'm Ethen Yi. <br>
+				 I'm a Front-End Developer.
+			</p>
+		</div>
+	</div>
+	<!--.mystory-->
+</div>
+<div id="third">
+	<div id="work">
+		<div class="workleft">
+			<div class="colerise">
+				<a href="http://colerise.com/" target="blank"><img class="img_init" src="images/colerise.jpg" alt="colerise"><img class="img_hover" src="images/colerise_hover.jpg" alt="cole rise 2"></a>
+			</div>
+		</div>
+		<div class="workleft">
+			<div class="bumblebee">
+				<a href="http://bumblebeelovesyou.com/" target="blank"><img class="img_init" src="images/bumblebee.jpg" alt="bumblebee"><img class="img_hover" src="images/bumblebee_hover.jpg" alt="bumblebee 2"></a>
+			</div>
+		</div>
+		<div class="workcenter">
+			<div class="lsg">
+				<a href="http://www.lifeinsixthgear.com/" target="blank"><img class="img_init" src="images/lsg.jpg" alt="lsg"><img class="img_hover" src="images/lsg_hover.jpg" alt="lsg 2"></a>
+			</div>
+		</div>
+		<div class="workcenter">
+			<div class="diluzio">
+				<a href="http://diluzioinc.com/" target="blank"><img class="img_init" src="images/diluzio.jpg" alt="diluzio"><img class="img_hover" src="images/diluzio_hover.jpg" alt="diluzio 2"></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="fourth">
+	<div class="center">
+		<div class="headerbuttons">
+			<div class="button linkedin" style="margin-top:-180px;margin-left:20px;">
+				<a href="http://www.linkedin.com/in/ethenyi" target="blank"><span></span></a>
+			</div>
+			<div class="button twitter" style="margin-top:-180px; margin-left:138px;">
+				<a href="https://twitter.com/ethenyi" target="blank"><span></span></a>
+			</div>
+			<div class="button mail" style="margin-top:-180px; margin-left:256px;">
+				<a href="mailto:ethen.yi@gmail.com" target="blank"><span></span></a>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="footer">
+	<h4>ETHEN YI, FRONT-END DEVELOPER | <a href="mailto:ethen.yi@gmail.com">ETHEN.YI@GMAIL.COM</a> | 562.899.1900</h4>
+</div>
+<!-- Google Analytics -->
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-50835159-1', 'ethenyi.com');
+  ga('send', 'pageview');
+		</script>
+<!-- End Google Analytics -->
+</body>
+</html>
